@@ -1,0 +1,78 @@
+.services{
+    padding: 60px 0;
+    background-color: #F9F8FF;
+    .container{
+        .title{
+            margin-bottom: 27px;
+            font-size: 37px;
+        }
+        .desc{
+            font-size: 18px;
+        }
+        .service{
+            margin-top: 20px;
+            padding: 67px 20px 67px 20px;
+            background-color: #fff;
+            @include transitionM(all .4s ease);
+            
+
+            .serv-cont{
+                @include transitionM(all .4s ease);
+
+
+                .icon{
+                    height: 60px;
+                    width: 60px;
+                    margin: auto;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    font-size: 30px;
+                }
+                .one{
+                   color: #47AEFF;
+                }
+                .two{
+                    color:#fdb484;
+                }
+                .three{
+                   color: #e80368;
+                }
+                .four{
+                   color: #fccb62;
+                }
+                .five{
+                  color: #fe6337;
+                }
+                .six{
+                    color: #16dcd0;
+                }
+
+
+
+                h4{
+                    margin: 20px 0;
+                }
+
+                .desc{
+                    color: #858383;
+                    font-size: 15px;
+                }
+            }
+            &:hover{
+
+                box-shadow: 2px 2px 15px rgb(0 0 0 / 14%);
+
+                /* .serv-cont{
+
+                   .icon{
+                      
+
+                    }
+                   
+                    
+                } */
+           
+        }
+    }
+}}

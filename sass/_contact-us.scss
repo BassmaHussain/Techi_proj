@@ -1,0 +1,58 @@
+// start contact us
+.contact-us{
+    padding: 50px 0;
+    .container{
+        p{
+            margin: 33px 0;
+        }
+        .way{
+            box-shadow: 0 1px 15px rgb(0,0,0,0.1);
+            padding: 30px 0;
+            margin-bottom: 20px;
+
+            i{
+                padding: 10px;
+                font-size: 24px;
+                height: 50px;
+                width: 50px;
+                margin-bottom: 20px;
+                color: #782bdc;
+            
+            }
+            
+            h4{
+                color: #425c74;
+            }
+            
+        }
+        .phone{
+            i{
+                @include transformM(rotate(-41deg));
+            }
+        }
+        
+        
+        .mapMassage{
+            .map{
+                margin-bottom: 20px;
+                iframe{
+                    width: 100%;
+                }
+            }
+            .massage{
+                box-shadow: 0 1px 15px rgb(0,0,0,0.1);
+                padding: 20px;
+                
+                input{
+                    margin-bottom: 15px !important;
+                }
+
+                .sub-btn{
+                    @extend %buttonS;
+                    color: #fff;
+                }
+            }
+        }
+        
+    }
+}

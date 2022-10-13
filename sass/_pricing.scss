@@ -1,0 +1,77 @@
+// Start pricing
+.pricing{
+    padding: 50px 0;
+    background-color: #F9F8FF;
+    
+    .container{
+        
+        .pricing-desc{
+            margin-bottom: 35px;
+        }
+        .price-box{
+         background-color: #fff;
+         padding-bottom:30px;
+         border-radius: 10px;
+         margin-bottom: 20px;
+         box-shadow: 3px 3px 8px rgb(0 0 0 / 25%);
+         overflow: hidden;
+         position: relative;
+
+         .type{
+            text-transform: uppercase;
+            color: #2c4964;
+            font-size: 17px;
+            padding: 22px 0;
+         }
+         .type-desc{
+             margin: 40px 0;
+
+             h4{
+                color: #782bdc;
+                font-size: 33px !important;
+                margin-bottom: 20px;
+                span{
+                    font-size: 15px;
+                    margin-left: 4px;
+                    color: #b9b7b7;
+                    font-weight: lighter;
+                }
+             }
+            .options{
+                color: $grayColor ;
+                li{
+                    margin-bottom: 10px;
+                }
+            }
+         }
+
+         .link{
+            @extend %buttonS;
+            padding: 10px 30px;
+         }
+
+         .not-avilable{
+             text-decoration: line-through;
+         }
+     }
+
+     .two{
+         .type{
+             background-color: #782bdc !important;
+             color: #fff;
+         }
+     }
+     .three{
+         .advanced{
+            background-color: #5846f9;
+            position: absolute;
+            top: 23px;
+            color: #fff;
+            transform: rotate(45deg);
+            padding: 2px 35px;
+            right: -26px;
+            font-size: 12px;
+         }
+     }
+    }
+}

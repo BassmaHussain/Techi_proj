@@ -1,0 +1,77 @@
+// header
+
+.header{
+    height: 100vh;
+    position: relative;
+    @include backGroundM("../images/hero-bg.jpg",cover,no-repeat);
+    background-position: bottom;
+    background-attachment: fixed;
+
+
+    .head-overlay{
+        @extend %overlay;
+        background-color: #6739e8;
+    }
+
+    .container{
+         position: relative;
+         z-index: 2;  
+         height: 100%;
+         
+         .row{
+             height: 100%;
+            align-items: center;
+
+            .head-content{
+                color: #fff;
+
+                h1{
+                    font-size: 60px;
+                    font-weight: bold;
+                }
+                .head-desc{
+                    font-size: 20px;
+                    font-weight: bold;
+                    color: #d1cccc;
+                }
+
+                .head-btn{
+                    color: #fff;
+                    font-size: 17px;
+                    font-weight: 600;
+                    padding: 12px 33px;
+                    border-width: 3px;
+                    margin-top: 30px;
+
+                    @include transitionM(all .5s ease);
+
+                    &:hover{
+                        background-color: #fff;
+                        color: #6739e8;
+                    }
+                }
+            }
+
+            .head-image{
+
+                img{
+                    width: 80%;
+                    animation: imageMove 4s infinite;
+                }
+            }
+         }
+         
+    }
+}
+
+@keyframes imageMove {
+    0% {
+         margin-top: 50px;
+    }
+    50% {
+        margin-top: 80px;
+    }
+    100% {
+        margin-top: 50px;
+    }
+}

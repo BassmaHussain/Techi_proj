@@ -1,0 +1,89 @@
+.navbar {
+  background-color: rgba(24, 6, 185, 0.8) !important;
+  position: fixed;
+}
+
+header {
+  background-color: #f2f6f9;
+  margin-top: 72px;
+  padding: 10px 0;
+}
+header .container .content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+@media (max-width: 992px) {
+  header .container .content {
+    flex-direction: column;
+  }
+}
+header .container .content h2 {
+  font-weight: 100;
+}
+header .container .content .breadcrumb {
+  background-color: transparent;
+  margin-bottom: 0;
+}
+
+.gallery .container .carousel {
+  position: relative;
+}
+.gallery .container .carousel .portCarousel {
+  margin-top: 30px;
+  height: 600px;
+  position: relative;
+  z-index: 1;
+}
+.gallery .container .carousel .portCarousel .item {
+  height: 100%;
+}
+.gallery .container .carousel .portCarousel .item img {
+  height: 100%;
+}
+.gallery .container .carousel .proj-info {
+  background-color: #fff;
+  box-shadow: 0px 0px 15px rgba(203, 201, 201, 0.5019607843);
+  width: fit-content;
+  -webkit-width: fit-content;
+  -moz-width: fit-content;
+  -o-width: fit-content;
+  padding: 25px;
+  position: absolute;
+  bottom: -59px;
+  z-index: 2;
+  right: 0;
+  color: #444444;
+}
+.gallery .container .carousel .proj-info h3 {
+  font-weight: bold;
+  padding-bottom: 17px;
+}
+.gallery .container .carousel .proj-info ul {
+  margin-top: 10px;
+}
+.gallery .container .carousel .proj-info ul li {
+  margin-top: 12px;
+}
+.gallery .container .carousel .proj-info ul li .label {
+  font-weight: bold;
+  margin-right: 6px;
+}
+.gallery .container .port-details {
+  margin-top: 71px;
+}
+.gallery .container .port-details h2 {
+  font-weight: bold;
+}
+
+.owl-theme .owl-dots {
+  float: left;
+}
+
+.owl-theme .owl-dots .owl-dot.active span,
+.owl-theme .owl-dots .owl-dot span:hover {
+  background-color: #5846f9;
+}
+
+/*# sourceMappingURL=portifolioDetails.css.map */

@@ -1,0 +1,97 @@
+//variables
+
+$grayColor:#686767;
+
+//mixins
+@mixin transitionM($para){
+    transition: $para;
+    -webkit-transition: $para;
+    -o-transition: $para;
+    -moz-transition:$para ;
+}
+
+
+
+@mixin backGroundM($img,$size,$repeat){
+    background-image: url($img);
+    background-size: $size;
+    -moz-background-size: $size;
+    -o-background-size: $size;
+    -webkit-background-size: $size;
+    background-repeat:$repeat;
+}
+
+
+@mixin transformM($para){
+    transform:$para;
+    -webkit-transform:$para;
+    -moz-transform: $para;
+    -o-transform: $para;
+}
+
+
+
+// ========= classes
+
+%overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    opacity: .8;
+}
+
+.title{
+    text-transform: uppercase;
+    color: #444444;
+
+
+
+    &::after{
+        content: "";
+        width: 72px;
+        height: 3px;
+        margin: 15px auto;
+        background-color: #5846f9;
+        display: block;
+    }
+}
+
+%buttonS{
+               background-image: linear-gradient(to bottom left, #782bdc, #754de7);
+                border: none;
+                margin-top: 20px;
+
+                &:hover{
+                    background-image: linear-gradient(to bottom left, #754de7, #782bdc);
+                }
+
+                a{
+                    color: #fff;
+
+                    &:hover{
+                        text-decoration: none;
+                    }
+
+                }
+}
+
+// scroll up button
+
+.scroll-up{
+    padding:13px 15px;
+    background-color: #5846f9;
+    color: #fff;
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    z-index: 1500;
+    cursor: pointer;
+    display:none;
+    border-radius: 5px;
+    
+}

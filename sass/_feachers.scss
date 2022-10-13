@@ -1,0 +1,40 @@
+.feachers{
+   padding: 50px 0;
+   .container{
+       
+
+      .feachers-desc{
+        margin-bottom: 35px;
+      }
+      .feachers-content{
+          
+         .feacher-item{
+            margin-bottom: 55px;
+
+
+            span{
+               float: left;
+               margin-right: 20px;
+
+               i{
+                  font-size: 36px;
+                  color: #5846f9;
+               }
+            }
+            h4{
+               color: #525252;
+               font-size: 20px;
+               font-weight: bold;
+            }
+            p{
+               margin-left: 60px;
+               color: #a7a7a7;
+            }
+            
+            
+
+         }
+      }
+      
+   }
+}

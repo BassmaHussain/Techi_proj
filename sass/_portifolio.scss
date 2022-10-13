@@ -1,0 +1,145 @@
+.portfolio{
+    padding: 50px 0;
+    .container{
+
+        
+     
+         .list{
+                margin-top: 25px;
+             li{
+                 display: inline-block;
+                 padding:8px 15px;
+                 cursor: pointer;
+                 color: #444444;
+                 font-weight: 500;
+
+                 @include transitionM(all 0.6s ease);
+
+                 &:hover{
+                    background-color: #5846f9;
+                    color: #fff;
+                    border-radius: 5px;
+                 }
+             }
+
+             .active-type{
+                background-color: #5846f9;
+                color: #fff;
+                border-radius: 5px;
+             }
+         }
+
+         .portfilio-content{
+
+             display: grid;
+             grid-gap: 15px;
+             grid-template-columns: repeat(3 , 1fr);
+             grid-template-rows: auto;
+             grid-template-areas:    "itemOne  itemTwo itemThree"
+                                    "itemOne  itemTwo itemFour"
+                                    "itemOne  itemFive itemFour"
+                                    "itemSix  itemFive itemFour"
+                                    "itemSix  itemFive itemSeven"
+                                    "itemSix  itemFive itemSeven"
+                                    "itemSix  itemNine itemEight"
+                                    ".  itemNine itemEight"
+                                    ".  itemNine .";      
+                                    
+            @media(max-width:992px) {
+                grid-template-columns: 50% 50%;
+                grid-template-rows: auto;
+                grid-template-areas:    "itemOne  itemTwo "
+                                        "itemOne  itemThree"
+                                        "itemFour itemThree"
+                                        "itemThree itemFive"
+                                        "itemSix  itemFive"
+                                        "itemSix  itemSeven"
+                                        "itemEight itemSeven"
+                                        "itemEight itemNine"
+                                        ".  itemNine";
+            }                        
+            @media(max-width:768px){
+                grid-template-columns:100%;
+            }
+
+             .item{
+                position: relative;
+                cursor: pointer;
+                height: 100%;
+             
+                img{
+                    width: 100%;
+                    height: 100%;
+                }
+
+                .details{
+                    position: absolute;
+                    bottom: 0px;
+                    right: 0px;
+                    left: 0px;
+                    top:0;
+                    background-color: #5846f9;
+                    opacity: .9;
+                    padding:3px 10px;
+                    color: #fff;
+                    @include transformM(scale(0,0));
+                    @include transitionM(all .5s ease);
+                    
+                  
+
+                 .cont{ 
+                     width: 100%;
+                     height: 100%;
+                     display: flex;
+                     align-items: center;
+                     justify-content: center;
+                   
+                        a{
+                            color: #ffffff99;
+                            @include transformM(translateY(-30px));
+
+
+                            &:hover{
+                                color: #fff;
+                            }
+                        }
+                   
+                    
+                 }
+
+                   
+                    
+                }
+             }
+
+
+             .item01{
+                 grid-area: itemOne;
+             }
+             .item02{
+                grid-area: itemTwo;
+            }
+            .item03{
+                grid-area: itemThree;
+            }
+            .item04{
+                grid-area: itemFour;
+            }
+            .item05{
+                grid-area: itemFive;
+            }
+            .item06{
+                grid-area: itemSix;
+            }
+            .item07{
+                grid-area: itemSeven;
+            }
+            .item08{
+                grid-area: itemEight;
+            }
+            .item09{
+                grid-area: itemNine;
+            }
+         }
+    }
+}

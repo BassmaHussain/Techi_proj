@@ -1,0 +1,38 @@
+// counts
+
+.counts{
+    @include backGroundM("../images/counts-bg.png", cover , no-repeat);
+    height: fit-content;
+    -webkit-height: fit-content;
+    -moz-height: fit-content;
+    -o-height: fit-content;
+    padding: 50px 0;
+
+    .container{
+        .row{
+            height: 100%;
+            align-items: center;
+
+
+            .count{
+                margin-bottom: 20px;
+                span{
+                    display: block;
+    
+                }
+    
+                .number{
+                    color: #fff;
+                    font-size: 45px;
+                    font-weight: bold;
+                }
+    
+                .type{
+                    color: #d1cccc;
+                }
+            }
+        }
+
+        
+    }
+}
